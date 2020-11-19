@@ -9,3 +9,4 @@ This is the repository for the Barbz group in AP CSP. (Copy code from [main.js](
 1. Write code in you own code.org project
 2. Test it to ensure it works and there are minimal bugs present (if possible include comments to show others where you need help)
 3. Add the code to the [main.js](main.js) file in the repository.
+4. You can commit directly to the main branch if you are comfortable with that, or you can create a new branch.
