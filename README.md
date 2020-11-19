@@ -4,7 +4,7 @@
 
 This is the repository for the Barbz group in AP CSP. (Copy code from [main.js](main.js) into your code.org project to run it.)
 
-### Contributing to the [main.js](main.js) document:
+### Contributing to the [main.js](main.js) file:
 
 1. Write code in you own code.org project
 2. Test it to ensure it works and there are minimal bugs present (if possible include comments to show others where you need help)
