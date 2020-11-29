@@ -59,3 +59,52 @@ function drawAliens(numAliens) {
 
 
 // END Section: Nataniel - Contributed Element: Aliens
+
+
+//BEGIN Section: Anandi Contributed Element: UFOs
+
+
+//Draw UFOs (parameter sets the number of UFOs that will be drawn):
+drawUFOs(3);
+
+//Define Functions
+function drawUFO(size, R, G, B) {
+  penUp();
+  moveTo(randomNumber(30, 200), randomNumber(30, 150));
+  penDown();
+  penRGB(R, G, B);
+  penWidth(size*2.5);
+  arcLeft(180, size);
+  penWidth(size*2.5);
+  penUp();
+  move(0-size*1.15, 0-size);
+  penDown();
+  arcRight(180, size*0.15);
+  penUp();
+  moveTo(getX(), getY()+size*3.4);
+  penDown();
+  penWidth(size*0.4);
+  moveForward(size*1.5);
+  penUp();
+  moveBackward(size*1.5);
+  moveTo(getX()+size*0.5, getY()-size*0.5);
+  penDown();
+  turnTo(120);
+  moveForward(size*2);
+  penUp();
+  moveBackward(size*2);
+  moveTo(getX()-size, getY());
+  penDown();
+  turnTo(240);
+  moveForward(size*2);
+  turnLeft(60);
+}
+
+function drawUFOs(numUFOs) {
+  for (var i = 0; i < numUFOs; i++) {
+    drawUFO(randomNumber(8,12), randomNumber(10,150), randomNumber(90,100), randomNumber(90,100));
+  }
+}
+
+
+// END Section: Anandi - Contributed Element: UFOs
