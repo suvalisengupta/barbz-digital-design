@@ -144,3 +144,36 @@ function sattwikCode() {
 sattwikCode();
 
 // END Section: Sattwik - Contributed Element: Stars
+
+
+//BEGIN Section: Suvali - Contributed Element: Meteors
+
+//draw meteors (parameter sets how many meteors will be drawn)
+drawMeteors(3);
+
+// define functions
+function drawMeteor(size) {
+  penUp();
+  moveTo(randomNumber(30, 290), randomNumber(300, 420));
+  penDown();
+  penRGB(211,211,211);
+  turnTo(65);
+  penWidth(size * 0.5);
+  moveForward(size * 5);
+  turnTo(250);
+  moveForward(size * 5);
+  penRGB(169, 169,169);
+  turnTo(90);
+  dot(size);
+  penWidth(size);
+
+
+}
+
+function drawMeteors(numMeteors) {
+  for (var i = 0; i < numMeteors; i++) {
+    drawMeteor(randomNumber(8,15), randomNumber(0,30), randomNumber(200,255), randomNumber(0,60));
+  }
+}
+
+//END Section: Suvali - Contributed Element: Meteors
