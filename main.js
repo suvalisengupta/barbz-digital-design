@@ -108,3 +108,39 @@ function drawUFOs(numUFOs) {
 
 
 // END Section: Anandi - Contributed Element: UFOs
+
+// START Section: Sattwik - Contributed Element: Stars
+
+function sattwikCode() {
+  //making a function for coding 1 star
+  function star(size) {
+    penUp();
+    var x = randomNumber(0,320);
+    var y = randomNumber(0,450);
+    penColor(rgb(randomNumber(220,255),randomNumber(200,255),randomNumber(0,200)));
+    moveTo(x,y);
+    //This is so the stars aren't all in the same direction
+    turnTo(randomNumber(0,360));
+    //This seemed to be the magic number to fill the stars
+    penWidth(size/3);
+    //for loop for drawing the stars
+    for (var i = 0; i < 5; i++) {
+      penDown();
+      moveForward(size);
+      turnRight(144);
+      penUp();
+    }
+  }
+  //function for making multiple stars
+  function drawStars(number) {
+    for (var i = 0; i < number; i++) {
+      star(randomNumber(1,5));
+    }
+  }
+  drawStars(randomNumber(300,400));
+}
+// I put everything into a function so we don't have to worry ab repeated variables :))
+// Also call the function right after the backgroundColor bc this is part of the background. My function can be declared later tho
+sattwikCode();
+
+// END Section: Sattwik - Contributed Element: Stars
